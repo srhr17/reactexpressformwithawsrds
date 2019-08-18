@@ -18,6 +18,9 @@ class App extends Component {
           <input type="number" name="age" placeholder="Age" />
           <br />
           <br />
+          <input type="file" name="document" />
+          <br />
+          <br />
           <input type="submit" />
         </form>
         <br />
