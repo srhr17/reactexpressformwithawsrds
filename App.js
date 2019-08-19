@@ -6,16 +6,24 @@ class App extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
       <div>
-        <form action="http://localhost:8001/login" method="POST">
+        <form
+          action="http://localhost:8001/login"
+          method="POST"
+          onSubmit={this.handle}
+        >
           <h3>Name : </h3>
           <input type="text" name="name" placeholder="Name" />
           <h3>Password : </h3>
           <input type="password" name="password" placeholder="Password" />
           <h3>Age : </h3>
           <input type="number" name="age" placeholder="Age" />
+          <br />
+          <br />
+          <input type="file" name="document" />
           <br />
           <br />
           <input type="submit" />
